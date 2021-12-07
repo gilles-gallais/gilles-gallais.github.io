@@ -1,0 +1,16 @@
+{
+  "background_color": "#F5F5F5",
+  "description": "This is a demo website",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Demo websiteb",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "gilles-gallais.github",
+  "start_url": "/",
+  "theme_color": "#332764",
+  "categories": [],
+  "screenshots": [],
+  "icons": [],
+  "shortcuts": []
+}
