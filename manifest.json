@@ -9,7 +9,7 @@
   "short_name": "gilles-gallais.github",
   "start_url": "/",
   "theme_color": "#332764",
-  "categories": [],
+  "categories": ["demo","pwa"],
   "screenshots": [],
   "icons": [
     {
@@ -26,6 +26,11 @@
       "src": "/assets/icons/107x107.png",
       "type": "image/png",
       "sizes": "107x107"
+    },
+    {
+      "src": "/assets/icons/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     },
     {
       "src": "/assets/icons/1024x1024.png",
