@@ -11,6 +11,27 @@
   "theme_color": "#332764",
   "categories": [],
   "screenshots": [],
-  "icons": [],
+  "icons": [
+    {
+      "src": "/assets/icons/71x71.png",
+      "type": "image/png",
+      "sizes": "71x71"
+    },
+    {
+      "src": "/assets/icons/89x89.png",
+      "type": "image/png",
+      "sizes": "89x89"
+    },
+    {
+      "src": "/assets/icons/107x107.png",
+      "type": "image/png",
+      "sizes": "107x107"
+    },
+    {
+      "src": "/assets/icons/1024x1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    }
+  ],
   "shortcuts": []
 }
