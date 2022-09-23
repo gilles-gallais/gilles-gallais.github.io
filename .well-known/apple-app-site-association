@@ -6,6 +6,11 @@
         "appID": "9FLSJ9H462.com.pagesjaunes.widgetiphone",
         "components": [
           {
+            "#": "sso-*",
+            "exclude": true,
+            "comment": "exclude requests from authentication system."
+          },
+          {
             "/": "/authentication/*",
             "exclude": true,
             "comment": "exclude requests from authentication system."
@@ -46,6 +51,11 @@
       {
         "appID": "8XF24Z96S9.com.pagesjaunes.ad4screen",
         "components": [
+          {
+            "#": "sso-*",
+            "exclude": true,
+            "comment": "exclude requests from authentication system."
+          },
           {
             "/": "/authentication/*",
             "exclude": true,
