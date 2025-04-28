@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Roboto:wght@400;700&display=swap');
+
+.report {
+  min-height: 100%;
+  background: white;
+  color: #2d251e;
+  font-family: "Montserrat", sans-serif;
+  /* les autres tailles doivent être proportionnelles à la valeur ci-dessous */
+  /* il faut donc les écrire en em, même si ça demande un peu de calcul */
+  font-size: 10pt;
+}
+
+.report a {
+  text-decoration: underline;
+  overflow-wrap: break-word;
+}
+
+.report b {
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.report section {
+  font-size: 1.1em; /* 11pt */
+}
+
+.report section.cover-page {
+  padding: 66px 0 0 150px; /* 1,32cm 3cm */
+  font-family: "Roboto";
+}
+
+.report section.cover-page .client {
+  position: relative;
+  margin-bottom: 4.5em;
+}
+.report section.cover-page .client .logo {
+  position: absolute;
+  bottom: 0; left: 0;
+  max-height: 100px; /* 2cm */
+  max-width: 300px; /* 6cm */
+}
+
+.report section.cover-page .date {
+  margin-bottom: 3em;
+}
+
+.report section.cover-page .title {
+  margin-bottom: 6em;
+}
+
+.report section.cover-page .date time {
+  color: #ed4857;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.818em; /* 20pt */
+  text-transform: uppercase;
+}
+
+.report section.cover-page .title h1 {
+  color: #ed4857;
+  font-family: "Bebas Neue";
+  font-size: 4.364em; /* 48pt */
+}
+
+.report section.cover-page .info {
+  color: #2d251e;
+  font-size: 1.091em; /* 12pt */
+}
+
+.report section.cover-page .info .separator {
+  width: 4em;
+  height: .25em;
+  background: #ed4857;
+}
+
+.report section.cover-page .info p:nth-of-type(odd) {
+  margin: 1.25em 0 0 0;
+  font-size: 1.167em; /* 14pt */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.report section.cover-page .info p:nth-of-type(even) {
+  margin: .25em 0 0 0;
+}
+
+.report section.contents-page {
+  font-family: "Roboto";
+  font-size: 1.2em; /* 12pt */
+  font-weight: bold;
+}
+
+.report section.contents-page h2 {
+  margin: 0 0 .125em 0;
+  font-size: 4em; /* 48pt */
+}
+
+.report section.contents-page ol {
+  margin: .2em 0 .6em 0;
+  padding-inline-start: 1.25em;
+  list-style-type: upper-alpha;
+}
+.report section.contents-page ol li ol li {
+  padding-left: 1.25em;
+  list-style-type: decimal;
+  font-size: .917em; /* 11pt */
+}
+
+.report section > section {
+  min-height: 0;
+  margin: 0 0 2em 1em;
+  font-size: 1em; /* 11pt */
+}
+
+.report section h2 {
+  margin: 0 0 1em 0;
+  color: #ed4857;
+  font-family: "Bebas Neue";
+  font-size: 2.545em; /* 28pt */
+  font-weight: lighter;
+}
+
+.report section h3 {
+  margin: 0 0 .75em 0;
+  font-family: "Roboto";
+  font-size: 1.273em; /* 14pt */
+  text-transform: uppercase;
+}
+
+.report section h4 {
+  margin: 0 0 .5em 0;
+  font-size: 1em; /* 11 pt */
+}
+
+.report section p,
+.report section ol,
+.report section ul {
+  margin: .75em 0 .75em 1em;
+}
+
+.report section blockquote {
+  margin: .75em 0 .75em 2em;
+}
+
+.report section ol,
+.report section ul {
+  padding-inline-start: 2em;
+}
+
+.report section .table-container {
+  overflow-x: auto;
+}
+
+.report section table {
+  width: 80%;
+  margin: 1em auto;
+  border-collapse: collapse;
+  font-family: "Verdana";
+  font-size: .909em; /* 10pt */
+}
+.report section table td,
+.report section table th {
+  padding: .7em;
+  border: 1px solid #2d251e;
+  text-align: center;
+}
+.report section table tbody th {
+  font-weight: normal;
+  text-align: left;
+}
+
+.report section table.contrast-table th:nth-of-type(2) {
+  width: 30%;
+}
+
+.report section table.overview-table {
+  border: 2px solid #000;
+}
+.report section table.overview-table td,
+.report section table.overview-table th {
+  border: 1px solid #d3d3d3;
+}
+.report section table.overview-table th:nth-of-type(2),
+.report section table.overview-table th:nth-of-type(3),
+.report section table.overview-table th:nth-of-type(4) {
+  width: 20%;
+  background-color: #ed4857;
+  color: #fff;
+}
+.report section table.overview-table tbody tr:nth-of-type(even) {
+  background-color: #ed4857;
+  color: #fff;
+}
+.report section table.overview-table tbody tr:nth-last-of-type(2) th,
+.report section table.overview-table tbody tr:nth-last-of-type(2) td {
+  font-weight: bold;
+}
+.report section table.overview-table tbody tr th {
+  white-space: nowrap;
+}
+.report section table.overview-table tbody tr th .counter {
+  display: inline-block;
+  width: 1.5em;
+  padding-right: .5em;
+  text-align: right;
+}
+
+.report section.criterion .criterion-status {
+  font-family: "Roboto";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.report section.criterion.success .criterion-status,
+.report section.criterion article.success .comment-status {
+  color: #31873e;
+}
+.report section.criterion.failure .criterion-status,
+.report section.criterion article.failure .comment-status {
+  color: #b3003b;
+}
+.report section.criterion.inapplicable .criterion-status,
+.report section.criterion article.inapplicable .comment-status {
+  color: #e45b00;
+}
+.report section.criterion article.failure .comment-status .danger {
+  font-size: 1.5em;
+  line-height: 1em;
+  vertical-align: middle;
+}
+
+.report section.criterion ul.comments {
+  margin: 0.75em 0;
+  padding-inline-start: 0;
+}
+.report section.criterion ul.comments > li {
+  margin: 1.5em 0;
+  list-style: none;
+}
+
+.report section.criterion article {
+  width: 600px; /* 12cm */
+  max-width: calc(100% - 60px);
+  margin: 0 auto;
+  padding: 25px; /* 5mm */
+  border-radius: 10px; /* 1mm */
+  border-style: solid;
+  border-width: 0;
+  border-left-width: 10px; /* 1mm */
+  background-color: #f5f5f5;
+  font-size: .909em; /* 10pt */
+}
+.report section.criterion article.success {
+   border-left-color: #31873e;
+}
+.report section.criterion article.failure {
+   border-left-color: #b3003b;
+}
+.report section.criterion article.inapplicable {
+   border-left-color: #e45b00;
+}
+
+.report section.criterion article .comment-status {
+  font-family: "Roboto";
+  font-size: 1.5em; /* 15pt */
+  font-weight: bold;
+}
+
+.report section.criterion article h5,
+.report section.criterion article .pages {
+  display: block;
+  margin: 1em 0;
+  font-size: 1.1em; /* 11pt */
+}
+
+.report section.criterion article .pages {
+  font-style: italic;
+}
+
+.report section.criterion article figure {
+  margin: 1em auto;
+}
+.report section.criterion article figure img {
+  display: block;
+  margin: 0 auto;
+}
+.report section.criterion article figure img.petit {
+  width: 33%;
+}
+.report section.criterion article figure img.moyen {
+  width: 60%;
+}
+.report section.criterion article figure img.grand {
+  width: 75%;
+}
+.report section.criterion article figure figcaption {
+  margin: .5em auto;
+  font-style: italic;
+  text-align: center;
+}
+
+.report pre {
+  background-color: #23241f;
+  color: #f8f8f2;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  padding: .25em .5em;
+  border-radius: .15em;
+}
+
+/* version écran */
+@media screen {
+
+  .report {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+  .report section {
+    margin-bottom: 8em;
+  }
+
+  @media (max-width: 1111px) {
+    .report {
+      width: 90vw;
+    }
+    .report section.cover-page {
+      padding: 0;
+    }
+  }
+
+/* version aperçu */
+  main .report {
+    width: auto;
+    margin: auto;
+    font-size: 1.6rem;
+  }
+
+}
+
+/* version imprimable */
+@media print {
+
+  @page {
+    size: A4;
+    /* la marge du haut peut accueillir le logo Urbilog */
+    margin: 29.5mm 12.7mm 12.7mm 12.7mm;
+  }
+
+  @bottom-right {
+    content: counter(page); /* ne fonctionne sur aucun navigateur */
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+    color-adjust: exact !important;                 /*Firefox*/
+  }
+
+  body {
+    margin: 0;
+/*    overflow: visible;*/
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .report {
+    width: 184.6mm; /* 21cm, moins les marges */
+    margin: 0 auto;
+  }
+
+  .report .no-page-break {
+    break-inside: avoid;
+  }
+
+  .report .page-break {
+    break-after: page;
+  }
+
+  .report .cover-page {
+    padding: 1.32cm 0 0 3cm;
+  }
+
+  .report section {
+    min-height: 0;
+    break-after: page;
+  }
+
+  .report section > section {
+    break-after: auto;
+  }
+
+  .report section.cover-page .client .logo {
+    max-height: 2cm;
+    max-width: 6cm;
+  }
+
+  .report section.criterion article {
+    width: 12cm;
+    padding: 5mm;
+    border-radius: 1mm;
+    border-left-width: 1mm;
+  }
+
+  .report h1,
+  .report h2,
+  .report h3,
+  .report h4,
+  .report h5,
+  .report .status {
+    break-after: avoid; /* ne fonctionne sur aucun navigateur */
+  }
+  /* pour empêcher un saut de page, on va simuler la présence d'un espace */
+  /* /!\ beugue sous Firefox */
+  .report h1::before,
+  .report h2::before,
+  .report h3::before,
+  .report h4::before,
+  .report h5::before,
+  .report .comment-status::before {
+    display: block;
+    height: 3em;
+    margin-bottom: -3em;
+    break-inside: avoid;
+    content: "";
+  }
+  .report h3::before {
+    height: 5em;
+    margin-bottom: -5em;
+  }
+
+  .report p,
+  .report blockquote {
+    orphans: 3;
+    widows: 3;
+  }
+
+}
